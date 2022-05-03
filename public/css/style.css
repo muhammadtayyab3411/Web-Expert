@@ -1,0 +1,1367 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@300&family=Vollkorn:ital,wght@1,400;1,500&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Root Variables */
+:root{
+    --url: url('../Images/ManWithMacBook-compressed.jpg');
+}
+
+/* Body Styling */
+/* body{
+    overflow-x: hidden;
+} */
+
+/* Nav Container Styling */
+#nav-container{
+    margin: 0px 25px;
+}
+
+/* NavBar Styling */
+#navBar{
+    display: flex;
+    align-items: center;
+    height: 25vh;
+}
+
+/* Logo Styling */
+#logo{
+    text-align: center;
+}
+
+#logo a img{
+    width: 190px;
+    height: 165px;
+    margin-right: 35px;
+}
+
+#navBarItems{
+    width: 100%;
+}
+
+#navBarItems ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navBarItems ul li{
+    list-style: none;
+    margin: 30px;
+}
+
+#navBarItems ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: all;
+    transition-duration: 0.2s;
+    text-shadow: 2px 2px 2px black;
+}
+
+#navBarItems ul li a:hover{
+    color: rgb(221, 220, 220);
+}
+
+/* Responsive Nav Styling */
+#responsiveNav{
+    background-color: black;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+    padding: 12px 6px;
+    margin-top: 25px;
+    display: none;
+    opacity: 0.7;
+}
+
+#hambar-icon{
+    position: absolute;
+    top: 9%;
+    right: 6%;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+    display: none;
+}
+
+#responsiveNav #responsiveNavItems ul li{
+    list-style: none;
+    color: white;
+    padding: 20px 41vw;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#responsiveNav #responsiveNavItems ul li:hover{
+    background-color: blue;
+}
+
+#responsiveNav #responsiveNavItems ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+/* Home Container Styling */
+
+#home-container{
+    margin: 0px 25px;
+    width: 93vw;
+    /* height: 62vh; */
+    height: calc(93vh - 25vh + 4vh);
+}
+
+#home-container::before{
+    content: "";
+    /* background: url('../Images/GreenryandMountains.jpg'); */
+    /* background: url('../Images/ManWithMacBook.jpg'); */
+    background: var(--url);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94vw;
+    height: 93%;
+    margin: 25px 25px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home-container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    justify-self: baseline;
+    margin-right: 35px;
+    top: 20%;
+}
+
+.home-container-content-heading-h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.3rem;
+    width: 15ch;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.home-container-content-heading-h4{
+    font-family: 'Vollkorn', serif;
+    width: 54ch;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* About Container Styling */
+#about-container{
+    margin: 0px 25px;
+    margin-top: 25px;
+}
+
+#about-container .about-container-content{
+    display: flex;
+}
+
+#about-container .about-container-content .about-container-content-img{
+    /* background: url('../Images/MacBook.jpg'); */
+    background: url('../Images/Computer-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 128rem;
+    height: 100vh;
+    margin-right: 25px;
+}
+
+#about-container .about-container-content .about-container-content-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+    padding: 1.4rem 0;
+}
+
+#about-container .about-container-content .about-container-content-card h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%;
+}
+
+#about-container .about-container-content .about-container-content-card h5{
+    font-family: 'Vollkorn', serif;
+    margin-bottom: 38px;
+    font-size: 1rem;
+}
+
+#about-container .about-container-content .about-container-content-card p{   
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    line-height: 23px;
+    width: 53%;
+}
+
+#about-container .about-container-content .about-container-content-card .about-container-btn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 19px 34px;
+    margin-top: 35px;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+#about-container .about-container-content .about-container-content-card .about-container-btn:hover{
+    background: rgb(136, 133, 133);
+    border:3px solid rgb(136, 133, 133);
+    color: white;
+}
+
+/* About Container Content-2 Styling */
+#about-container .about-container-content2{
+    display: flex;
+    margin-top: 25px;
+}
+
+#about-container .about-container-content2 .about-container-content2-img{
+    background: url('../Images/Girl\ with\ Laptop\ 3-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 53%;
+    height: 100vh;
+    margin-left: 25px;
+    /* width: 51%;
+    margin-left: 29px; */
+    /* height: 97vh; */
+}
+
+#about-container .about-container-content2 .about-container-content-card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+    width: 48%;
+    padding: 1.4rem 0;
+}
+
+#about-container .about-container-content2 .about-container-content-card2 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%
+}
+
+#about-container .about-container-content2 .about-container-content-card2 h5{
+    font-family: 'Vollkorn', serif;
+    margin-bottom: 38px;
+    font-size: 1rem;
+}
+
+#about-container .about-container-content2 .about-container-content-card2 p{   
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    line-height: 23px;
+    width: 53%;
+}
+
+#about-container .about-container-content2 .about-container-content-card2 .about-container-btn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 19px 34px;
+    margin-top: 35px;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+#about-container .about-container-content2 .about-container-content-card2 .about-container-btn:hover{
+    background: rgb(136, 133, 133);
+    border:3px solid rgb(136, 133, 133);
+    color: white;
+}
+
+/* Stats Container Styling */
+#stats-container{
+    margin: 0 25px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#stats-container #stats-container-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stats-container #stats-container-content .stats-container-content-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 23px;
+}
+
+#stats-container #stats-container-content .stats-container-content-box h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+#stats-container #stats-container-content .stats-container-content-box h5{
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    font-size: 1rem;
+}
+
+/* Services Container Styling */
+#services-container{
+    margin: 0px 25px;
+}
+
+#services-container .services-container-content{
+    display: flex;
+}
+
+#services-container .services-container-content .services-container-content-img{
+    background: url('../Images/Laptop\ 2-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 128rem;
+    height: 100vh;
+    margin-right: 25px;
+}
+
+#services-container .services-container-content .services-container-content-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+    padding: 1.4rem 0;
+}
+
+#services-container .services-container-content .services-container-content-card h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%
+}
+
+#services-container .services-container-content .services-container-content-card h5{
+    font-family: 'Vollkorn', serif;
+    margin-bottom: 38px;
+    font-size: 1rem;
+}
+
+#services-container .services-container-content .services-container-content-card p{   
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    line-height: 23px;
+    width: 53%;
+}
+
+#services-container .services-container-content .services-container-content-card .services-container-btn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 19px 34px;
+    margin-top: 35px;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+#services-container .services-container-content .services-container-content-card .services-container-btn:hover{
+    background: rgb(136, 133, 133);
+    border:3px solid rgb(136, 133, 133);
+    color: white;
+}
+
+/* Services Cards Styling */
+#services-cards-container{
+    display: flex;
+    margin: 0px 25px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#services-cards-container .services-cards{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background: gainsboro;
+    padding: 10px 20px;
+}
+
+#services-cards-container .services-cards .services-cards-logo{
+    width: 110px;
+    height: 110px;
+    align-self: center;
+    margin-top: 47px;
+}
+
+#services-cards-container .services-cards .services-cards-heading{
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 35px;
+}
+
+#services-cards-container .services-cards .services-cards-paragraph{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.services-container-cards-btn{
+    /* align-self: baseline; */
+    font-family: 'Montserrat', sans-serif;
+    padding: 19px 34px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    align-self: center;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+.services-container-cards-btn:hover{
+    background: rgb(136, 133, 133);
+    border:3px solid rgb(136, 133, 133);
+    color: white;
+}
+
+/* Reviews Container Styling */
+#reviews-container{
+    margin: 0px 25px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reviews-container #reviews-container-headings{
+    width: 34%;
+}
+
+#reviews-container #reviews-container-headings h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+#reviews-container #reviews-container-headings h5{
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    font-size: 1rem;
+}
+
+/* Users Reviews Styling */
+#users-reviews{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#users-reviews .users-reviews-cards{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    background: gainsboro;
+    padding: 20px 20px;
+}
+
+#users-reviews .users-reviews-cards .users-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    align-self: center;
+}
+
+#users-reviews .users-reviews-cards .users-ratings-stars{
+    align-self: center;
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+#users-reviews .users-reviews-cards .review-quote-symbol{
+    text-align: center;
+    margin-top: 25px;
+}
+
+#users-reviews .users-reviews-cards .users-review-paragraph{
+    margin-top: 6px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#users-reviews .users-reviews-cards .users-name{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Portfolio Container Styling */
+#portfolio-container{
+    margin: 0px 25px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio-container #portfolio-container-intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio-container #portfolio-container-intro h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+#portfolio-container #portfolio-container-intro h5{
+    font-family: 'Vollkorn', serif;
+    font-size: 1rem;
+}
+
+#portfolio-container #portfolio-container-intro p{
+    margin-top: 20px;
+    width: 55%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Portfolio Container Content Styling */
+#portfolio-container #portfolio-container-content{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div1{
+    background: url('../Images/GreenryandMountains-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div2{
+    background: url('../Images/Girl\ in\ Office-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div3{
+    background: url('../Images/Bridge\ on\ Moon-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div4{
+    background: url('../Images/Man\ on\ Mountains-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div5{
+    background: url('../Images/MacBook-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div6{
+    background: url('../Images/Tab\ Microsoft-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div7{
+    background: url('../Images/Girl\ with\ Laptop-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#portfolio-container #portfolio-container-content #portfolio-images-parent-div8{
+    background: url('../Images/MountainswithWater-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#portfolio-container #portfolio-container-content .portfolio-images-parent-div:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+/* Contact Contaier Styling */
+#contact-container{
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#contact-container #contact-container-headings{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-container #contact-container-headings h2{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact-container #contact-container-headings h5{
+    font-size: 1rem;
+    font-family: 'Vollkorn', serif;
+}
+
+#contact-container #contact-container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-container #contact-container-content .contact-container-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-container #contact-container-content .contact-container-inputs label{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-container #contact-container-content .contact-container-inputs .contact-container-input-tags{
+    width: 65vw;
+    height: 35px;
+    padding: 23px 12px;
+    border: 1px solid #ccc;
+    border-radius: 2%;
+    vertical-align: middle;
+}
+
+#contact-container #contact-container-content .contact-container-inputs .contact-container-input-tags:focus{
+    outline: 1px solid rgb(101, 101, 202);
+}
+
+#contact-container #contact-container-content .contact-container-inputs .contact-container-input-tags::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#input-tags-text-area{
+    overflow-y: hidden;   
+}
+
+#submit-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-btn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 19px 34px;
+    margin-top: 35px;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+#submit-btn:hover{
+    background: rgb(136, 133, 133);
+    border:3px solid rgb(136, 133, 133);
+    color: white;
+}
+
+/* Footer Styling */
+#footer{
+    margin: 0px 25px;
+    background: black;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    min-height: 40vh;
+    padding: 35px 35px;
+    display: flex;
+}    
+
+#footer #footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 55px;
+    color: white;
+    margin-right: 30px;
+    flex-basis: 75%;
+}
+
+#footer #footer-content .footer-columns{
+    margin-right: 24px;
+}
+
+#footer #footer-content .footer-columns .footer-column-headings{
+    /* text-align: center; */
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    color: #9d9d9d;
+}
+
+#footer #footer-content .footer-columns li{
+    list-style: none;
+    margin-top: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+#footer #footer-content .footer-columns li a{
+    text-decoration: none;
+    padding-top: 10px;
+    color: rgb(138, 133, 133);
+    font-size: 1rem;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+#footer #footer-content .footer-columns li a:hover{
+    color: white;
+}
+
+ @media screen and (max-width: 925px) {
+  #nav-container #navBarItems{
+      display: none;
+  }
+    
+  #hambar-icon{
+      display: block;
+  }
+
+  /* #home-container{
+      height: 93vh;
+  } */
+
+  #home-container-content{
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    top: 20%;
+    left: 0;
+  }
+
+  /* ----------------Continue from here------------------ */
+
+  .about-container-content{
+      flex-direction: column; 
+  } 
+
+  #about-container .about-container-content .about-container-content-img{
+      background: url('../Images/MacBook-compressed.jpg');
+      margin-bottom: 25px;
+      height: 50vh;
+      width: 100%;
+      margin-right: 0;
+      background-position: center;
+      background-size: cover;
+    }
+
+  #about-container .about-container-content2{
+      flex-direction: column-reverse;
+  }
+  
+  #about-container .about-container-content2 .about-container-content2-img{
+    background: url('../Images/Man\ on\ Mountains-compressed.jpg');
+    margin-bottom: 25px;
+    height: 50vh;
+    width: 100%;
+    margin-left: 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #about-container .about-container-content2 .about-container-content-card2{
+    width: 100%;
+  }
+
+  #services-container .services-container-content{
+    flex-direction: column;
+  }
+
+  #services-container .services-container-content .services-container-content-img{
+    background: url('../Images/Girl\ in\ Office-compressed.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    height: 50vh;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #services-cards-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services-cards-container .services-cards{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .services-container-cards-btn{
+    width: auto;
+  }
+
+  #users-reviews{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #users-reviews .users-reviews-cards{
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
+  #portfolio-container #portfolio-container-content{
+    flex-direction: column;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div1{
+    height: 250px;
+    width: 350px;
+  }
+  
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div2{
+    height: 250px;
+    width: 350px;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div3{
+    height: 250px;
+    width: 350px;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div4{
+    height: 250px;
+    width: 350px;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div5{
+    height: 250px;
+    width: 350px;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div6{
+    height: 250px;
+    width: 350px;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div7{
+    height: 250px;
+    width: 350px;
+  }
+
+  #portfolio-container #portfolio-container-content #portfolio-images-parent-div8{
+    height: 250px;
+    width: 350px;
+  }
+
+  #footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer #footer-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#footer #footer-content .footer-columns{
+    margin-top: 4rem;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+    
+
+@media screen and (max-width: 750px) {
+    #home-container::before{
+        width: calc(94vw - 1%);
+      }
+
+    #responsiveNav{
+        width: calc(94vw - 1%);
+    }  
+
+    .home-container-content-heading-h1{
+        width: 10ch;
+    }
+    
+    .home-container-content-heading-h4{
+        width: 35ch;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #logo a img{
+        width: 130px;
+        height: 115px;
+        margin-right: 0;
+    }
+
+    #home-container::before{
+        width: calc(94vw - 2%);
+      }
+
+    #responsiveNav{
+        width: calc(94vw - 2%);
+    }
+
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div1{
+        height: 15rem;
+        width: 23rem;
+    }
+      
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div2{
+       height: 15rem;
+       width: 23rem;
+    }
+    
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div3{
+       height: 15rem;
+       width: 23rem;
+    }
+    
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div4{
+       height: 15rem;
+       width: 23rem;
+    }
+    
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div5{
+       height: 250px;
+       width: 23rem;
+    }
+    
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div6{
+       height: 15rem;
+       width: 23rem;
+    }
+    
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div7{
+       height: 15rem;
+       width: 23rem;
+    }
+    
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div8{
+       height: 15rem;
+       width: 23rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #home-container::before{
+        width: calc(94vw - 3%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 3%);
+    }
+
+    #stats-container #stats-container-content{
+        flex-direction: column;
+    }
+    
+    #stats-container #stats-container-content .stats-container-content-box{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    #home-container::before{
+        width: calc(94vw - 4%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 4%);
+    }
+
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div1{
+        height: 12rem;
+        width: 19rem;
+      }
+      
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div2{
+        height: 12rem;
+        width: 19rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div3{
+        height: 12rem;
+        width: 19rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div4{
+        height: 12rem;
+        width: 19rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div5{
+        height: 12rem;
+        width: 19rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div6{
+        height: 12rem;
+        width: 19rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div7{
+        height: 12rem;
+        width: 19rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div8{
+        height: 12rem;
+        width: 19rem;
+      }
+
+      .home-container-content-heading-h1{
+          font-size: 2.5rem;
+          width: 7ch;
+      }  
+
+      .home-container-content-heading-h4{
+          font-size: 0.8rem;
+          width: 24ch;
+      }
+}
+
+@media screen and (max-width: 450px){
+    #home-container::before{
+        width: calc(94vw - 5%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 5%);
+    }
+
+    #hambar-icon{
+        right: 8%;
+    }
+
+    #logo a img{
+        width: 100px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    #home-container::before{
+        width: calc(94vw - 6%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 6%);
+    }
+}
+
+@media screen and (max-width: 380px){
+    #home-container::before{
+        width: calc(94vw - 7%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 7%);
+    }
+
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 345px){
+    #home-container::before{
+        width: calc(94vw - 8%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 8%);
+    }
+
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #home-container::before{
+        width: calc(94vw - 9%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 9%);
+    }
+
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 302px){
+    #home-container::before{
+        width: calc(94vw - 10%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 10%);
+    }
+
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    #home-container::before{
+        width: calc(94vw - 11%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 11%);
+    }
+
+    :root{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 260px){
+    #home-container::before{
+        width: calc(94vw - 13%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 13%);
+    }
+
+    :root{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 235px){
+    #home-container::before{
+        width: calc(94vw - 14%);
+    }
+
+    #responsiveNav{
+        width: calc(94vw - 14%);
+    }
+
+    :root{
+        font-size: 11px;
+    }
+
+    .home-container-content-heading-h1{
+        font-size: 2.3rem;
+        width: 7ch;
+    }  
+
+    .home-container-content-heading-h4{
+        font-size: 0.6rem;
+        width: 24ch;
+    }
+
+    #about-container .about-container-content .about-container-content-card h2{
+        font-size: 2.2rem;
+    }
+
+    #about-container .about-container-content .about-container-content-card h5{
+        font-size: 0.6rem;
+    }
+
+    #about-container .about-container-content .about-container-content-card p{
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    #about-container .about-container-content .about-container-content-card .about-container-btn{
+        padding: 13px 20px;
+    }
+
+    #about-container .about-container-content2 .about-container-content-card2 h2{
+        font-size: 2.2rem;
+    }
+
+    #about-container .about-container-content2 .about-container-content-card2 h5{
+        font-size: 0.6rem;
+    }
+
+    #about-container .about-container-content2 .about-container-content-card2 p{
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    #about-container .about-container-content2 .about-container-content-card2 .about-container-btn{
+        padding: 13px 20px;
+    }
+
+    #services-cards-container .services-cards .services-cards-heading{
+        font-size: 1.9rem;
+    }
+
+    #reviews-container #reviews-container-headings h2{
+        font-size: 2.5rem;
+    }
+
+    #portfolio-container #portfolio-container-intro h2{
+        font-size: 2.5rem;
+    }
+
+    #portfolio-container #portfolio-container-content #portfolio-images-parent-div1{
+        height: 8rem;
+        width: 14rem;
+      }
+      
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div2{
+        height: 8rem;
+        width: 14rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div3{
+        height: 8rem;
+        width: 14rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div4{
+        height: 8rem;
+        width: 14rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div5{
+        height: 8rem;
+        width: 14rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div6{
+        height: 8rem;
+        width: 14rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div7{
+        height: 8rem;
+        width: 14rem;
+      }
+    
+      #portfolio-container #portfolio-container-content #portfolio-images-parent-div8{
+        height: 8rem;
+        width: 14rem;
+      }
+
+      #responsiveNavLogo img{
+          width: 100px;
+          height: 80px;
+      }
+}
+
+@media screen and (min-width: 950px){
+    #home-container::before{
+        width: 95vw;
+    }
+}

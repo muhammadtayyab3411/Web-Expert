@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Expert | Community of Developers</title>
+</head>
+<link rel="shortcut icon" href="Images/codelogo.png" type="image/x-icon">
+<link rel="stylesheet" id="style" href="css/style.css">
+<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+<body>
+    <!-- NavBar Container -->
+    <div id="nav-container">
+        <div id="navBar">
+            <div id="logo">
+                <a href=""><img src="Images/logo1.png" alt="Web Expert"></a>
+            </div> 
+            <div id="navBarItems">
+                <ul id="navBarul">
+                    <li><a href="#nav-container">Home</a></li>
+                    <li><a href="#about-container">About</a></li>
+                    <li><a href="#services-container">Services</a></li>
+                    <li><a href="#portfolio-container">Portfolio</a></li>
+                    <li><a href="#contact-container">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" id="hambar-icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        
+            <div id="responsiveNav">
+                <div id="responsiveNavLogo">
+                    <a href=""><img src="../Images/logo1.png" alt="Web Expert"></a>
+                </div>
+                <div id="responsiveNavItems">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <!-- Home Container -->
+    <div id="home-container">
+        <div id="home-container-content">
+            <h1 id="home-container-content-heading-h1" class="home-container-content-heading-h1">We Can Change your Digital World</h1>
+            <h4 id="home-container-content-heading-h4" class="home-container-content-heading-h4">Bold enough to blow a hole in your next marketing campaign.</h4>
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div id="about-container">
+        <div class="about-container-content" data-anijs="if: scroll, on:window, do: pulse animated, before: scrollReveal">
+            <div class="about-container-content-img">
+                <!-- <img src="../Images/Computer.jpg" alt="Computer" class="about-container-content-img"> -->
+            </div>
+            <div class="about-container-content-card">
+                <h2 class="about-container-content-card-heading-h2" >Creative & Fresh</h2>
+                <h5 class="about-container-content-card-heading-h5">Our Digital World</h5>
+
+                <p class="about-container-content-card-paragraph">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+
+                <input type="button" value="View Portfolio" class="about-container-btn">
+            </div>
+        </div>
+
+        <div class="about-container-content2" data-anijs="if: scroll, on:window, do: pulse animated, before: scrollReveal">
+            <div class="about-container-content-card2" id="card-margin-reset">
+                <h2 class="about-container-content-card2-heading-h1">Hip & Funcky</h2>
+                <h5 class="about-container-content-card2-heading-h5">We try new things</h5>
+                
+                <p class="about-container-content-card2-paragraph">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+                
+                <input type="button" value="Our Services" class="about-container-btn">
+            </div>
+
+            <div class="about-container-content2-img">
+                <!-- <img src="../Images/Girl with Laptop 3.jpg" alt="Computer" class="about-container-content2-img" id="img-margin-reset"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Container -->
+    <div id="stats-container">
+        <div id="stats-container-content" data-anijs="if: scroll, on:window, do: lightSpeedIn animated, before: scrollReveal">
+            <div class="stats-container-content-box">
+                <h2>844</h2>
+                <h5>Apps Built</h5>
+            </div>
+            <div class="stats-container-content-box">
+                <h2>1006</h2>
+                <h5>Websites Developed</h5>
+            </div>
+            <div class="stats-container-content-box">
+                <h2>923</h2>
+                <h5>Coding Tutorials</h5>
+            </div>
+            <div class="stats-container-content-box">
+                <h2>453</h2>
+                <h5>Videos Edited</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Container -->
+    <div id="services-container" data-anijs="if: scroll, on:window, do: pulse animated, before: scrollReveal">
+        <div class="services-container-content">
+            <div class="services-container-content-img">
+                <!-- <img src="../Images/Laptop 2.jpg" alt="Computer" class="services-container-content-img"> -->
+            </div>
+            <div class="services-container-content-card">
+                <h2 class="services-container-content-card-heading-h1" >Things We Do</h2>
+                <h5 class="services-container-content-card-heading-h5">We exist to create</h5>
+
+                <p class="services-container-content-card-paragraph">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+
+                <input type="button" value="Get in Touch" class="services-container-btn">
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Cards Container -->
+    <div id="services-cards-container" data-anijs="if: scroll, on: window, do: fadeIn animated, to: .services-cards, before: scrollReveal">
+        <div class="services-cards" id="services-card-1">
+            <img src="Images/App Development Logo.png" alt="App Development Logo" class="services-cards-logo">
+            <h2 class="services-cards-heading">App Development</h2>
+            <p class="services-cards-paragraph">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha.</p>
+            <input type="button" value="Make an app" class="services-container-cards-btn">
+        </div>
+        <div class="services-cards" id="services-card-1">
+            <img src="Images/Web Development Logo.png" alt="Web Development Logo" class="services-cards-logo">
+            <h2 class="services-cards-heading">Web Design</h2>
+            <p class="services-cards-paragraph">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha.</p>
+            <input type="button" value="Design a Website" class="services-container-cards-btn">
+        </div>
+        <div class="services-cards" id="services-card-1">
+            <img src="Images/Video Editing Logo.png" alt="App Development Logo" class="services-cards-logo">
+            <h2 class="services-cards-heading">Video Editing</h2>
+            <p class="services-cards-paragraph">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha.</p>
+            <input type="button" value="Edit a Video" class="services-container-cards-btn">
+        </div>
+    </div>
+
+    <!-- Reviews Container -->
+    <div id="reviews-container">
+        <div id="reviews-container-headings" data-anijs="if: scroll, on:window, do: slideInDown animated, before: scrollReveal">
+            <h2>Our Clients Love our Work</h2>
+            <h5>But don't just take our word for it</h5>
+        </div>
+
+        <div id="users-reviews">
+            <div class="users-reviews-cards" id="users-reviews-cards-1" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal">
+                <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="User Image" class="users-img">
+                <h5 class="users-name">Michael David</h5>
+                <div class="users-ratings-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i class="fas fa-quote-left review-quote-symbol"></i>
+                <p class="users-review-paragraph">It's always a pleasure to work with Web Expert and his team. They are personable, responsive, and results-oriented!</p>
+            </div>
+            <div class="users-reviews-cards" id="users-reviews-cards-2" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal">
+                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="User Image" class="users-img">
+                <h5 class="users-name">Margaret Amanda</h5>
+                <div class="users-ratings-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i class="fas fa-quote-left review-quote-symbol"></i>
+                <p class="users-review-paragraph">Your thoughtfulness and support of MPCC is very much appreciated. You are a very dear friend to the Chamber, and I want to assure you that your confidence in Web will be justified</p>
+            </div>
+            <div class="users-reviews-cards" id="users-reviews-cards-3" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: scrollReveal">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User Image" class="users-img">
+                <h5 class="users-name">Usman Ali</h5>
+                <div class="users-ratings-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i class="fas fa-quote-left review-quote-symbol"></i>
+                <p class="users-review-paragraph">Web Expert is attentive, personable, and professional. He and his team provide great support for my company's needs.</p>
+            </div>
+            <div class="users-reviews-cards" id="users-reviews-cards-4" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: scrollReveal">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User Image" class="users-img">
+                <h5 class="users-name">Karan Nancy</h5>
+                <div class="users-ratings-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i class="fas fa-quote-left review-quote-symbol"></i>
+                <p class="users-review-paragraph">Great results. Enjoyable to work with, and most importantly, enabled us to have the presence on the web we needed to conduct business in today's market.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Container -->
+    <div id="portfolio-container">
+        <div id="portfolio-container-intro" data-anijs="if: scroll, on:window, do: slideInDown animated, before: scrollReveal">
+            <h2>Latest Creations</h2>
+            <h5>We make beautiful things</h5>
+            <p>Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha.</p>
+        </div>
+
+        <div id="portfolio-container-content" data-anijs="if: scroll, on:window, do: lightSpeedIn animated, before: scrollReveal">
+            <div id="portfolio-images-parent-div1" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div2" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div3" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div4" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div5" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div6" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div7" class="portfolio-images-parent-div"></div>
+            <div id="portfolio-images-parent-div8" class="portfolio-images-parent-div"></div>    
+        </div>
+    </div>
+
+    <!-- Contact Container -->
+    <div id="contact-container">
+        <div id="contact-container-headings" data-anijs="if: scroll, on:window, do: slideInDown animated, before: scrollReveal">
+            <h2>Write us a Letter</h2>
+            <h5>We appreciate your ideas</h5>
+        </div>
+
+        <div id="contact-container-content" data-anijs="if: scroll, on:window, do: slideInUp animated, before: scrollReveal">
+            <form action="/" method="post">
+            <div class="contact-container-inputs">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your Name" class="contact-container-input-tags" name="name">
+            </div>
+            <div class="contact-container-inputs">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your Email" class="contact-container-input-tags" name="email">
+            </div>
+            <div class="contact-container-inputs">
+                <label for="message">Message</label>
+                <textarea name="message" placeholder="Enter your Message" class="contact-container-input-tags" id="input-tags-text-area" name="message"></textarea>
+            </div>
+            <div id="submit-btn-div">
+                <input type="submit" value="Submit" id="submit-btn">
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer">
+        <div id="logo">
+            <img src="Images/logo1.png" alt="Web Expert Logo">
+        </div>
+        <div id="footer-content">
+            
+            <div id="about-column" class="footer-columns">
+                <h3 class="footer-column-headings">Menu</h3>
+                <li><a href="">Experienced Developers</a></li>
+                <li><a href="">Web Designers</a></li>
+                <li><a href="">Content Writers</a></li>
+                <li><a href="">Blog Post</a></li>
+                <li><a href="">Video Maker</a></li>
+                <li><a href="">Logo Designers</a></li>
+                <li><a href="">App Developers</a></li>
+            </div>
+            
+            <div id="services-column" class="footer-columns">
+                <h3 class="footer-column-headings">Services</h3>
+                <li><a href="">Redux Apps</a></li>
+                <li><a href="">React Sites</a></li>
+                <li><a href="">4k Video Editing</a></li>
+                <li><a href="">PHP Development</a></li>
+                <li><a href="">Learn to Code</a></li>
+                <li><a href="">Style Sheets</a></li>
+                <li><a href="">Entertainment</a></li>
+            </div>
+            
+            <div id="contact-column" class="footer-columns">
+                <h3 class="footer-column-headings">Contact</h3>
+                <li><a href="">webexpert@webexpert.com</a></li>
+                <li><a href="">091-88394385</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Google</a></li>
+                <li><a href="">Telegram</a></li>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script src="https://kit.fontawesome.com/0b090846fe.js" crossorigin="anonymous"></script>
+<script src="../anijs-master/dist/anijs-min.js"></script>
+<script src="../anijs-master/src/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+</html>
+
+
+<!-- ----------for scrolling animations----------- -->
+<!-- data-anijs="if: scroll, on: window, do: fadeInLeftBig animated, before: scrollReveal" -->
