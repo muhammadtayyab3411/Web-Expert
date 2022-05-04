@@ -4,9 +4,10 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 const bodyParser = require("body-parser");
 const path = require("path");
+const Db = "mongodb+srv://muhammadtayyab3411:tayyab3411@cluster0.9gkle.mongodb.net/web-expert-db?retryWrites=true&w=majority";
 const port = process.env.port || 8000;
 
-mongoose.connect("mongodb://localhost:27017/contactFormDB").then(() => {
+mongoose.connect(Db, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
     console.log("Connection successful");
 }).catch(err => console.log(err));
 
@@ -68,3 +69,5 @@ app.post("/", async(req, res) => {
 app.listen(port, () => {
     console.log(`Listening on port : ${port}`);
 });
+
+// tayyab3411
