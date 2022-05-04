@@ -5,7 +5,7 @@ const validator = require("validator");
 const bodyParser = require("body-parser");
 const path = require("path");
 const Db = "mongodb+srv://muhammadtayyab3411:tayyab3411@cluster0.9gkle.mongodb.net/web-expert-db?retryWrites=true&w=majority";
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 
 mongoose.connect(Db, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
     console.log("Connection successful");
